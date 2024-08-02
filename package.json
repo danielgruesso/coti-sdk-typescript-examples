@@ -1,17 +1,18 @@
 {
   "name": "coti-sdk-typescript-examples",
-  "version": "1.0.0",
+  "version": "0.4.6",
   "license": "MIT",
   "private": true,
   "scripts": {
     "postinstall": "cd confidentiality-contracts && yarn && yarn build",
     "erc20": "ts-node src/main.ts erc20",
-    "dataOnChain": "ts-node src/main.ts dataOnChain"
+    "dataOnChain": "ts-node src/main.ts dataOnChain",
+    "nativeTransfer": "ts-node src/main.ts nativeTransfer"
   },
   "devDependencies": {
-    "@coti-io/coti-sdk-typescript": "https://github.com/coti-io/coti-sdk-typescript.git",
+    "@coti-io/coti-sdk-typescript": "0.6.2",
     "dotenv": "^16.4.5",
-    "ethers": "^6.12.0",
+    "ethers": "^6.12.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }
